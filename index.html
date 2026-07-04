@@ -28,9 +28,8 @@
         </button>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#neuropuck">NeuroPuck</a></li>
-          <li><a href="#how">How it works</a></li>
+          <li><a href="#how">Why it works</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="#tech">Tech</a></li>
           <li><a href="#ranks">SNYPE score</a></li>
           <li><a class="nav-cta" href="#waitlist">Join the waitlist</a></li>
         </ul>
@@ -64,7 +63,7 @@
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
-          <a class="btn btn-ghost" href="#how">See how it works <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="#how">Why it's different <span aria-hidden="true">↓</span></a>
         </div>
         <ul class="hero-stats" aria-label="At a glance">
           <li><strong>&lt;100&nbsp;ms</strong><span>shot → feedback</span></li>
@@ -153,34 +152,34 @@
       </div>
     </section>
 
-    <!-- ================= HOW IT WORKS ================= -->
+    <!-- ================= WHY IT WORKS ================= -->
     <section class="section section-alt" id="how" aria-labelledby="how-title">
       <div class="wrap">
         <header class="section-head reveal">
-          <p class="kicker">How it works</p>
-          <h2 class="display" id="how-title">From slapshot to scoreboard in <span class="accent">milliseconds</span></h2>
-          <p class="section-intro">Four stages run in a tight loop, every single shot.</p>
+          <p class="kicker">Why it works</p>
+          <h2 class="display" id="how-title">A net that <span class="accent">plays back</span></h2>
+          <p class="section-intro">Shooting at a frozen target builds a frozen shot. SNYPE HOCKEY moves, reacts and keeps score — so you train the reads and the situations, not just the reps.</p>
         </header>
         <ol class="steps">
           <li class="step reveal">
-            <span class="step-num">01</span>
-            <h3>The camera watches</h3>
-            <p>One angled camera streams the projected play surface at 720p, keeping only the freshest frame for the lowest possible lag.</p>
+            <span class="step-ico" aria-hidden="true">🥅</span>
+            <h3>The goalie plays you</h3>
+            <p>The keeper repositions and changes pose to take away your angle. You read a live goalie and pick your spot — the game-sense a static net can never build.</p>
           </li>
           <li class="step reveal">
-            <span class="step-num">02</span>
-            <h3>AI finds the puck</h3>
-            <p>A trained detector catches the puck even as a fast, blurred streak in flight — then pinpoints the exact moment and point of impact.</p>
+            <span class="step-ico" aria-hidden="true">🎯</span>
+            <h3>Rehearse real situations</h3>
+            <p>Choose your angle, your distance, your scenario — or let a timed drill throw new looks at you. Practice the exact shots a game actually asks for.</p>
           </li>
           <li class="step reveal">
-            <span class="step-num">03</span>
-            <h3>Unity scores it</h3>
-            <p>The impact maps to the goal and the same rules that ran the original trainer decide GOAL, SAVE, POST or MISS — with the shot's speed.</p>
+            <span class="step-ico" aria-hidden="true">🎮</span>
+            <h3>Fun makes you repeat</h3>
+            <p>Mini-games and instant GOAL / SAVE feedback turn practice into play. The best drill is simply the one you want to run one more time.</p>
           </li>
           <li class="step reveal">
-            <span class="step-num">04</span>
-            <h3>You feel it land</h3>
-            <p>The net flashes, the score ticks, XP and your SNYPE rank update. Line up the next puck and go again.</p>
+            <span class="step-ico" aria-hidden="true">🤝</span>
+            <h3>Better, together</h3>
+            <p>Every shot feeds your SNYPE score. Compare progress, chase friends and challenge teammates — development you share, instead of grind alone.</p>
           </li>
         </ol>
       </div>
@@ -226,9 +225,9 @@
 
           <article class="feature-card reveal">
             <div class="feature-icon" aria-hidden="true">🎯</div>
-            <span class="tag">AI sensor</span>
-            <h3>Real-time puck vision</h3>
-            <p>Computer-vision detection with a direction-vector impact model that reads the true contact point off the wall — even on hit-and-deflect shots.</p>
+            <span class="tag">Real puck</span>
+            <h3>It reads your real shot</h3>
+            <p>Shoot your own puck at the wall and it's called the instant it lands — nothing on the puck, no button, no tap. It feels like the wall is keeping score for you.</p>
           </article>
 
           <article class="feature-card reveal">
@@ -282,42 +281,8 @@
       </div>
     </section>
 
-    <!-- ================= TECH ================= -->
-    <section class="section" id="tech" aria-labelledby="tech-title">
-      <div class="wrap">
-        <header class="section-head reveal">
-          <p class="kicker">The tech</p>
-          <h2 class="display" id="tech-title">Engineered around the <span class="accent">shot</span></h2>
-          <p class="section-intro">The hard part isn't drawing a net — it's knowing precisely where and when a fast puck hit it.</p>
-        </header>
-
-        <div class="metrics">
-          <div class="metric reveal"><strong>&lt;100 ms</strong><span>target latency from impact to on-screen feedback</span></div>
-          <div class="metric reveal"><strong>~10 ms</strong><span>AI detection per frame on a modern GPU</span></div>
-          <div class="metric reveal"><strong>720p</strong><span>freshest-frame capture, tuned so the camera never becomes the bottleneck</span></div>
-          <div class="metric reveal"><strong>4</strong><span>verdicts — GOAL / SAVE / POST / MISS — decided on every shot</span></div>
-        </div>
-
-        <div class="tech-notes">
-          <div class="tech-note reveal">
-            <h3>Vision that sees the streak</h3>
-            <p>A slow puck is an easy dark disc; a slapshot in flight is a bright, blurred motion streak. A trained detector catches both, so the sensor tracks the whole flight — not just the puck once it has already slowed.</p>
-          </div>
-          <div class="tech-note reveal">
-            <h3>Direction-vector impact</h3>
-            <p>Impact is detected where the puck's travel direction turns — the corner in its path — measured on displacement so jittery camera timing can't distort it. That reports the true contact point, even on shots that deflect and keep moving.</p>
-          </div>
-          <div class="tech-note reveal">
-            <h3>Sensor and game, cleanly split</h3>
-            <p>The camera pipeline is <em>just the sensor</em>: it reports where and how hard the puck hit, and when. Unity owns all game logic, rendering, scoring and UI — one clean contract between them.</p>
-          </div>
-        </div>
-        <p class="brand-note reveal">Technology serves the game — never the other way around.</p>
-      </div>
-    </section>
-
     <!-- ================= RANKS ================= -->
-    <section class="section section-alt" id="ranks" aria-labelledby="ranks-title">
+    <section class="section" id="ranks" aria-labelledby="ranks-title">
       <div class="wrap">
         <header class="section-head reveal">
           <p class="kicker">Your SNYPE score</p>
@@ -344,7 +309,7 @@
     </section>
 
     <!-- ================= ROADMAP ================= -->
-    <section class="section" id="roadmap" aria-labelledby="roadmap-title">
+    <section class="section section-alt" id="roadmap" aria-labelledby="roadmap-title">
       <div class="wrap">
         <header class="section-head reveal">
           <p class="kicker">Where it's going</p>
@@ -394,9 +359,9 @@
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <a href="#neuropuck">NeuroPuck</a>
-        <a href="#how">How it works</a>
+        <a href="#how">Why it works</a>
         <a href="#features">Features</a>
-        <a href="#tech">Tech</a>
+        <a href="#ranks">SNYPE score</a>
         <a href="#waitlist">Waitlist</a>
         <a href="https://github.com/cw-do/neuropuck3d_unity" target="_blank" rel="noopener">GitHub</a>
       </nav>
